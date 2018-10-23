@@ -6,6 +6,4 @@
 
 ![Logics3](./book/Logics3.png)
 
-![74HC595](./book/74HC595.png)
-
 

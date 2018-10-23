@@ -1,4 +1,4 @@
-# スイッチ回路
+# スイッチング回路
 
 ![MOSFET-Switch.png](./book/MOSFET-Switch.png)
 
