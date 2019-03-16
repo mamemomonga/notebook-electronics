@@ -1,3 +1,5 @@
 # 個別部品
 
-![2N7002K](./book/2N7002K.png)
+![MOSFET](./book/MOSFET.png)
+
+![MOSFET-Switch](./book/MOSFET-Switch.png)
