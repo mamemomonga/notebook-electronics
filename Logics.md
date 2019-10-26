@@ -6,7 +6,7 @@
 
 ![Logics3](./book/Logics3.png)
 
-![Logics4](./book/Logics3.png)
+![Logics4](./book/Logics4.png)
 
 # シフトレジスタ
 
