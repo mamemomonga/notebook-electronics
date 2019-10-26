@@ -10,7 +10,7 @@
 
 # シフトレジスタ
 
-![Shift-Resister](./book/Shift-Resister.png)
+![SR](./book/SR.png)
 
 # インターフェイス部品
 
