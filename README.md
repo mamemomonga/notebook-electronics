@@ -2,8 +2,8 @@
 
 電子工作・電子部品の実験に便利な部品のピン配列など、主にデータシートからの引用。
 
-* [抵抗](./Resistors.md)
-* [MOSFET](./MOSFET.md)
-* [ロジック](./Logic.md)
-* [レギュレータ](./Regulators.md)
-* [AVR](./AVR.md)
+* [抵抗](./docs/Resistors.md)
+* [MOSFET](./docs/MOSFET.md)
+* [ロジック](./docs/Logics.md)
+* [レギュレータ](./docs/Regulators.md)
+* [AVR](./docs/AVR.md)
