@@ -28,47 +28,47 @@ ATtiny412/402/212/202 w/Optiboot                          | megaTinyCore:megaavr
 
 ## [ATtiny 406/806/1606](https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x06.md)
 
-	        VCC  | 1    20 |  GND
-	SS  D0  PA4  | 2    19 |  PA3  D16  SCK
-	    D1  PA5  | 3    18 |  PA2  D15  MISO
-		D2  PA6  | 4    17 |  PA1  D14  MOSI
-		D3  PA7  | 5    16 |  UPDI
-		D4  PB5  | 6    15 |  PC3  D13
-		D5  PB4  | 7    14 |  PC2  D12
-	RXD D6  PB3  | 8    13 |  PC1  D11
-	TXD D7  PB2  | 9    12 |  PC0  D10
-	SDA D8  PB1  | 10   11 |  PB0  D9  SCL 
+            VCC  | 1    20 |  GND
+    SS  D0  PA4  | 2    19 |  PA3  D16  SCK
+        D1  PA5  | 3    18 |  PA2  D15  MISO
+        D2  PA6  | 4    17 |  PA1  D14  MOSI
+        D3  PA7  | 5    16 |  UPDI
+        D4  PB5  | 6    15 |  PC3  D13
+        D5  PB4  | 7    14 |  PC2  D12
+    RXD D6  PB3  | 8    13 |  PC1  D11
+    TXD D7  PB2  | 9    12 |  PC0  D10
+    SDA D8  PB1  | 10   11 |  PB0  D9  SCL 
 
 ### ATTiny1606, OptiBootなし, 内部20MHz, jtag2updi
 
 詳細情報の表示
 
-	$ arduino-cli board details --fqbn=megaTinyCore:megaavr:atxy6
+    $ arduino-cli board details --fqbn=megaTinyCore:megaavr:atxy6
 
 コンパイルとアップロード
 
-	$ arduino-cli compile --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
-	$ arduino-cli upload -P jtag2updi -p /dev/cu.usbserial-2001 --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
+    $ arduino-cli compile --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
+    $ arduino-cli upload -P jtag2updi -p /dev/cu.usbserial-2001 --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
 
 # Makefileサンプル
 
-	AR_PORT=/dev/cu.usbserial-0001
-	AR_SKETCH=$(notdir $(basename $(shell find . -name '*.ino')))
-	AR_FQBN=arduino:avr:uno
+    AR_PORT=/dev/cu.usbserial-0001
+    AR_SKETCH=$(notdir $(basename $(shell find . -name '*.ino')))
+    AR_FQBN=arduino:avr:uno
 
-	upload: build/$(AR_SKETCH).ino.hex
-		arduino-cli upload -b $(AR_FQBN) -p $(AR_PORT) --input-dir "$(CURDIR)/build"
+    upload: build/$(AR_SKETCH).ino.hex
+        arduino-cli upload -b $(AR_FQBN) -p $(AR_PORT) --input-dir "$(CURDIR)/build"
 
-	compile: build/$(AR_SKETCH).ino.hex
+    compile: build/$(AR_SKETCH).ino.hex
 
-	serial:
-		screen $(AR_PORT)
+    serial:
+        screen $(AR_PORT)
 
-	clean:
-		rm -rf build
+    clean:
+        rm -rf build
 
-	build/$(AR_SKETCH).ino.hex: $(AR_SKETCH)/$(AR_SKETCH).ino
-		arduino-cli compile -b $(AR_FQBN) --build-path "$(CURDIR)/build" $(AR_SKETCH)
+    build/$(AR_SKETCH).ino.hex: $(AR_SKETCH)/$(AR_SKETCH).ino
+        arduino-cli compile -b $(AR_FQBN) --build-path "$(CURDIR)/build" $(AR_SKETCH)
 
-	.PHONY: upload compile serial clean
+    .PHONY: upload compile serial clean
 
