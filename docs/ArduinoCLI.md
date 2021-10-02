@@ -47,8 +47,8 @@ ATtiny412/402/212/202 w/Optiboot                          | megaTinyCore:megaavr
 
 コンパイルとアップロード
 
-    $ arduino-cli compile --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
-    $ arduino-cli upload -P jtag2updi -p /dev/cu.usbserial-2001 --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal ./example
+    $ arduino-cli compile --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal,startuptime=64 ./example
+    $ arduino-cli upload -P jtag2updi -p /dev/cu.usbserial-2001 --fqbn=megaTinyCore:megaavr:atxy6:chip=1606,clock=20internal,startuptime=64 ./example
 
 # Makefileサンプル
 
