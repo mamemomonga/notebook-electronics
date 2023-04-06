@@ -7,6 +7,8 @@
 
 ![IF-MCP23017.png](../graffle/notebook-electronics/IF-MCP23017.png)
 
-![IF-ShiftRegister.png](../graffle/notebook-electronics/IF-ShiftRegister.png)
+![IF-ShiftRegister-01.png](../graffle/notebook-electronics/IF-ShiftRegister-01.png)
+
+![IF-ShiftRegister-02.png](../graffle/notebook-electronics/IF-ShiftRegister-02.png)
 
 ![IF-MIDI.png](../graffle/notebook-electronics/IF-MIDI.png)
