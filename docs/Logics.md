@@ -6,3 +6,7 @@
 ![Logics-03.png](../graffle/notebook-electronics/Logics-03.png)
 
 ![Logics-04.png](../graffle/notebook-electronics/Logics-04.png)
+
+![Logics-05.png](../graffle/notebook-electronics/Logics-05.png)
+
+![Logics-06.png](../graffle/notebook-electronics/Logics-06.png)
